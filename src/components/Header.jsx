@@ -1,0 +1,13 @@
+import React from "react";
+
+export default function Header() {
+  return (
+    <div>
+      <div className="bg-black text-white p-8">
+        <h1 className="text-center">
+          Get 25% OFF on your first order. Order Now!!!
+        </h1>
+      </div>
+    </div>
+  );
+}
