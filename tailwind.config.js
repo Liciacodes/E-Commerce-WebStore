@@ -2,7 +2,12 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        manropeFont: ['"Manrope"', "sans-serif"],
+        interFont: ['"Inter"', "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
