@@ -8,7 +8,7 @@ export default function Newsletter() {
         <h1 className="font-interFont font-semibold text-[32px] mb-4">
           Join Our Newsletter
         </h1>
-        <p className="font-interFont font-normal text-[14px] mb-10">
+        <p className="font-interFont font-normal text-[14px] mb-10 text-[#717171]">
           We love to surprise our subscribers with occasional gifts.
         </p>
       </div>
