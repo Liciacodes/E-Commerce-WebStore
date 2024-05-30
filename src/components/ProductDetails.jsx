@@ -86,8 +86,10 @@ export default function ProductDetails() {
           </div>
 
           <div className="mt-8">
-            <Button label={"Add To Cart"} className="px-20" />
-            <p>— Free shipping on orders $100+</p>
+            <button className="bg-black text-white px-28 py-2 rounded-lg">
+              Add To Cart
+            </button>
+            <p>— FREE SHIPPING ON ORDERS $100+</p>
           </div>
         </div>
       </div>
