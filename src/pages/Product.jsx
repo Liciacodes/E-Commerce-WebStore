@@ -4,6 +4,7 @@ import NavBar from "../components/NavBar";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
 import ProductDetails from "../components/ProductDetails";
+import Details from "../components/Details";
 
 const Product = () => {
   return (
@@ -11,9 +12,10 @@ const Product = () => {
       <Header />
       <NavBar />
 
-      <section className="bg-white border px-40  border-t-[#F6F6F6] h-[600px] mt-5">
-        <ProductDetails />
-      </section>
+      <ProductDetails />
+
+      <Details />
+
       <Newsletter />
       <Footer />
     </div>

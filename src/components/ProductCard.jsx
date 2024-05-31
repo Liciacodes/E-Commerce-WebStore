@@ -5,7 +5,7 @@ export default function ProductCard({ image, title, stockLabel, price }) {
     <div className="flex flex-col items-start ">
       <img src={image} alt="product-image" />
 
-      <p className="font-interFont font-medium text-[#0E1422] mt-5 text-[14px]">
+      <p className="font-interFont font-bold text-[#0E1422] mt-5 text-[14px]">
         {title}
       </p>
 
