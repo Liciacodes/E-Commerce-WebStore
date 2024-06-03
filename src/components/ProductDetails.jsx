@@ -5,6 +5,7 @@ import star from "../assets/icons/Star.png";
 import WishList from "../assets/icons/Whishlist.png";
 import Add from "../assets/icons/Add.png";
 import Minus from "../assets/icons/Minus.png";
+import { Link } from "react-router-dom";
 
 export default function ProductDetails() {
   return (
@@ -104,9 +105,11 @@ export default function ProductDetails() {
 
             <div className="mt-6 ">
               <div className="flex justify-between">
-                <button className="bg-black text-white px-28 py-3 rounded-md">
-                  Add To Cart
-                </button>
+                <Link to="/cart">
+                  <button className="bg-black text-white px-28 py-3 rounded-md">
+                    Add To Cart
+                  </button>
+                </Link>
                 <img src={WishList} />
               </div>
 

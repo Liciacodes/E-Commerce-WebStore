@@ -11,11 +11,8 @@ const Product = () => {
     <div>
       <Header />
       <NavBar />
-
       <ProductDetails />
-
       <Details />
-
       <Newsletter />
       <Footer />
     </div>
