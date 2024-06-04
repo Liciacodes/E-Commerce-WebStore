@@ -69,10 +69,12 @@ export default function Cart() {
             <p>Total: </p>
             <p>$ 100.00</p>
           </div>
+          <Link to={"/checkout"}>
+            <button className="bg-black text-white px-6 py-3 rounded-lg w-full mb-6 text-interFont font-medium">
+              Checkout
+            </button>
+          </Link>
 
-          <button className="bg-black text-white px-6 py-3 rounded-lg w-full mb-6 text-interFont font-medium">
-            Checkout
-          </button>
           <Link>
             <p className="text-center underline text-interFont font-medium">
               Continue Shopping
