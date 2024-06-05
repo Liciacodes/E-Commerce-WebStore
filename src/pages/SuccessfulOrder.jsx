@@ -26,7 +26,7 @@ export default function SuccessfulOrder() {
       <div className="flex flex-col items-center justify-center mt-[70px]  ">
         <img src={success} alt="success-order" />
         <h3 className="font-bold text-[24px]">Thank you for shopping</h3>
-        <p className="text-[16px] w-[379px] mb-6">
+        <p className="text-[16px] text-center w-[379px] mb-6">
           Your order has been successfully placed and is now being processed.
         </p>
         <Button

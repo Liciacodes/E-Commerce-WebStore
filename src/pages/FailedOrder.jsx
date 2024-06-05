@@ -26,7 +26,7 @@ export default function SuccessfulOrder() {
       <div className="flex flex-col items-center justify-center mt-[70px] mb-[100px] ">
         <img src={failed} alt="success-order" />
         <h3 className="font-bold text-[24px]">Oops! There was an issue</h3>
-        <p className="text-[16px] w-[360px] mb-6">
+        <p className="text-[16px] text-center w-[360px] mb-6">
           Oops! There was a problem processing your order. Please review the
           details and try again.
         </p>
