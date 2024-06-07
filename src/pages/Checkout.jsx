@@ -5,22 +5,15 @@ import { Link } from "react-router-dom";
 import featured1 from "../assets/feature1.png";
 import featured2 from "../assets/featured2.png";
 import Footer from "../components/Footer";
+import HeaderWrapper from "../components/HeaderWrapper";
 
 export default function Checkout() {
   return (
     <div>
       <Header />
       <NavBar />
-      <div className="mb-40">
-        <div className="px-40 py-10 bg-[#F6F6F6] ">
-          <div>
-            <h3 className="font-interFont font-bold text-[24px]">Checkout </h3>
-            <p className="font-interFont font-medium text-[14px] text-[#5C5F6A] mt-4">
-              Ecommerce {">"}{" "}
-              <span className="text-black font-bold">Checkout</span>
-            </p>
-          </div>
-        </div>
+      <HeaderWrapper title={"Checkout"} color={"#F6F6F6"} />
+      <div className="mb-10">
         <div className="px-40 flex justify-between mt-10">
           <div className="w-[60%] ">
             <h5 className="font-interFont font-semibold text-[16px]">

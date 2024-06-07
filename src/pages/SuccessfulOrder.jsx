@@ -4,24 +4,14 @@ import NavBar from "../components/NavBar";
 import success from "../assets/icons/success.png";
 import Button from "../components/Button";
 import Footer from "../components/Footer";
+import HeaderWrapper from "../components/HeaderWrapper";
 
 export default function SuccessfulOrder() {
   return (
     <div>
       <Header />
       <NavBar />
-
-      <div className="px-40 py-10 bg-[#D5E5D7] ">
-        <div>
-          <h3 className="font-interFont font-bold text-[24px]">
-            Successful Order{" "}
-          </h3>
-          <p className="font-interFont font-medium text-[14px] text-[#5C5F6A] mt-4">
-            Ecommerce {">"}{" "}
-            <span className="text-black font-bold">Successful Order</span>
-          </p>
-        </div>
-      </div>
+      <HeaderWrapper title={"Successful Order"} color={"#D5E5D7"} />
 
       <div className="flex flex-col items-center justify-center mt-[70px]  ">
         <img src={success} alt="success-order" />

@@ -4,24 +4,14 @@ import NavBar from "../components/NavBar";
 import failed from "../assets/icons/failed-transaction.png";
 import Button from "../components/Button";
 import Footer from "../components/Footer";
+import HeaderWrapper from "../components/HeaderWrapper";
 
-export default function SuccessfulOrder() {
+export default function FailedOrder() {
   return (
     <div>
       <Header />
       <NavBar />
-
-      <div className="px-40 py-10 bg-[#FBD9D0] ">
-        <div>
-          <h3 className="font-interFont font-bold text-[24px]">
-            Successful Order{" "}
-          </h3>
-          <p className="font-interFont font-medium text-[14px] text-[#5C5F6A] mt-4">
-            Ecommerce {">"}{" "}
-            <span className="text-black font-bold">Successful Order</span>
-          </p>
-        </div>
-      </div>
+      <HeaderWrapper title={"Failed Order"} color={"#FBD9D0"} />
 
       <div className="flex flex-col items-center justify-center mt-[70px] mb-[100px] ">
         <img src={failed} alt="success-order" />

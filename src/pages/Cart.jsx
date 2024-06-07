@@ -7,20 +7,14 @@ import Footer from "../components/Footer";
 import CartDetails from "../components/CartDetails";
 import featured1 from "../assets/feature1.png";
 import featured2 from "../assets/featured2.png";
+import HeaderWrapper from "../components/HeaderWrapper";
 
 export default function Cart() {
   return (
     <div className="mb-80">
       <Header />
       <NavBar />
-      <div className="px-40 py-10 bg-[#F6F6F6]">
-        <div>
-          <h3 className="font-interFont font-bold text-[24px]">Cart </h3>
-          <p className="font-interFont font-medium text-[14px] text-[#5C5F6A] mt-4">
-            Ecommerce {">"} <span className="text-black">Cart</span>
-          </p>
-        </div>
-      </div>
+      <HeaderWrapper color={"#F6F6F6"} title={"Cart"} />
 
       <div className="px-40 flex justify-between mt-10">
         <div className="w-[60%] ">
