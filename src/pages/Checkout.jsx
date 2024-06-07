@@ -13,7 +13,7 @@ export default function Checkout() {
       <Header />
       <NavBar />
       <HeaderWrapper title={"Checkout"} color={"#F6F6F6"} />
-      <div className="mb-10">
+      <div className="mb-20">
         <div className="px-40 flex justify-between mt-10">
           <div className="w-[60%] ">
             <h5 className="font-interFont font-semibold text-[16px]">
@@ -152,7 +152,7 @@ export default function Checkout() {
         </div>
       </div>
 
-      <Footer />
+      <Footer bgColor={"#F6F6F6"} />
     </div>
   );
 }

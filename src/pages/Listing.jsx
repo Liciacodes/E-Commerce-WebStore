@@ -10,6 +10,8 @@ import frame3 from "../assets/frame3.png";
 import frame4 from "../assets/frame4.png";
 import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
+import Newsletter from "../components/Newsletter";
+import Footer from "../components/Footer";
 
 const categoryList = ["Trousers", " Shoes", "Handbags", " Hats", " Thermos"];
 
@@ -45,7 +47,7 @@ export default function Listing() {
         </p>
       </div>
 
-      <div className="flex mt-10 px-40">
+      <div className="flex mt-10 px-40 mb-10">
         <div className="border rounded w-1/5 h-[828px]">
           <div className="px-4">
             <h3 className="mb-6 font-bold text-[14px] font-interFont mt-4">
@@ -200,6 +202,8 @@ export default function Listing() {
           </div>
         </div>
       </div>
+      <Newsletter />
+      <Footer />
     </div>
   );
 }

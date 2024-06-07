@@ -1,6 +1,11 @@
 import React from "react";
 import Input from "./Input";
 import NavLink from "./NavLink";
+import { Link } from "react-router-dom";
+import cart from "../assets/icons/cart.png";
+import user from "../assets/icons/user.png";
+import search from "../assets/icons/Search.png";
+// import chevronDown from "../assets/icons/";
 
 export default function NavBar() {
   return (
@@ -37,7 +42,23 @@ export default function NavBar() {
         </ul>
       </div>
 
-      <Input placeholder="Search products" />
+      <div className="relative flex items-center ">
+        <img
+          src={search}
+          alt="search icon"
+          className="absolute w-5 h-5 ml-2 "
+        />
+        <Input placeholder="Search products" />
+
+        <div className="flex ml-8 gap-x-6 items-center">
+          <Link to="cart">
+            <img src={cart} />
+          </Link>
+          <Link>
+            <img src={user} alt="" srcset="" />
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

@@ -7,9 +7,7 @@ export default function FreshArrival() {
   return (
     <section className="flex items-center justify-between px-40 bg-[#F6F6F6] h-[440px]">
       <div>
-        <h1 className="font-interFont font-semibold text-[32px] mb-4">
-          Fresh Arrivals Online
-        </h1>
+        <h1 className="font-interFont text-3xl mb-4">Fresh Arrivals Online</h1>
         <p className="font-interFont font-normal text-[14px] mb-10">
           Discover Our Newest Collection Today.
         </p>

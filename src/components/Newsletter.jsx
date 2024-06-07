@@ -3,7 +3,7 @@ import Button from "./Button";
 
 export default function Newsletter() {
   return (
-    <section className="flex items-center justify-between px-40  bg-gradient-to-r from-[#F6F6F6] to-blue-[#FFFFFF00]  h-[310px]">
+    <section className="flex items-center justify-between px-40  bg-[#F6F6F6] h-[310px]">
       <div>
         <h1 className="font-interFont font-semibold text-[32px] mb-4">
           Join Our Newsletter

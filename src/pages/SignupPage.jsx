@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import NavBar from "../components/NavBar";
 import HeaderWrapper from "../components/HeaderWrapper";
+import Footer from "../components/Footer";
 
 export default function SignUp() {
   return (
@@ -83,6 +84,7 @@ export default function SignUp() {
           </form>
         </div>
       </div>
+      <Footer bgColor={"#F6F6F6"} />
     </div>
   );
 }

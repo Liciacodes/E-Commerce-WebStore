@@ -11,7 +11,7 @@ import HeaderWrapper from "../components/HeaderWrapper";
 
 export default function Cart() {
   return (
-    <div className="mb-80">
+    <div className="mb-100">
       <Header />
       <NavBar />
       <HeaderWrapper color={"#F6F6F6"} title={"Cart"} />
@@ -76,7 +76,7 @@ export default function Cart() {
           </Link>
         </div>
       </div>
-      <Footer />
+      <Footer bgColor={"#F6F6F6"} />
     </div>
   );
 }
