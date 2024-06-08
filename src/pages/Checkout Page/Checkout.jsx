@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "../components/Header";
-import NavBar from "../components/NavBar";
+import Header from "../../components/Header";
+import NavBar from "../../components/NavBar";
 import { Link } from "react-router-dom";
-import featured1 from "../assets/feature1.png";
-import featured2 from "../assets/featured2.png";
-import Footer from "../components/Footer";
-import HeaderWrapper from "../components/HeaderWrapper";
+import featured1 from "../../assets/feature1.png";
+import featured2 from "../../assets/featured2.png";
+import Footer from "../../components/Footer";
+import HeaderWrapper from "../../components/HeaderWrapper";
 
 export default function Checkout() {
   return (
@@ -65,9 +65,6 @@ export default function Checkout() {
                     class="w-full border px-[10px] py-[15px] rounded-md border-[#E6E7E8] appearance-none block mb-3 leading-tight outline-none"
                     type="text"
                   />
-                  {/* <p class="text-red-500 text-xs italic">
-                  Please fill out this field.
-                </p> */}
                 </div>
                 <div class="w-full md:w-1/2 px-3">
                   <label class="block  tracking-wide text-gray-700 text-xs font-bold mb-2">

@@ -1,27 +1,26 @@
 import React from "react";
-import Header from "../components/Header";
-import NavBar from "../components/NavBar";
-import failed from "../assets/icons/failed-transaction.png";
-import Button from "../components/Button";
-import Footer from "../components/Footer";
-import HeaderWrapper from "../components/HeaderWrapper";
+import Header from "../../components/Header";
+import NavBar from "../../components/NavBar";
+import success from "../../assets/icons/success.png";
+import Button from "../../components/Button";
+import Footer from "../../components/Footer";
+import HeaderWrapper from "../../components/HeaderWrapper";
 
-export default function FailedOrder() {
+export default function SuccessfulOrder() {
   return (
     <div>
       <Header />
       <NavBar />
-      <HeaderWrapper title={"Failed Order"} color={"#FBD9D0"} />
+      <HeaderWrapper title={"Successful Order"} color={"#D5E5D7"} />
 
-      <div className="flex flex-col items-center justify-center mt-[70px] mb-[100px] ">
-        <img src={failed} alt="success-order" />
-        <h3 className="font-bold text-[24px]">Oops! There was an issue</h3>
-        <p className="text-[16px] text-center w-[360px] mb-6">
-          Oops! There was a problem processing your order. Please review the
-          details and try again.
+      <div className="flex flex-col items-center justify-center mt-[70px]  ">
+        <img src={success} alt="success-order" />
+        <h3 className="font-bold text-[24px]">Thank you for shopping</h3>
+        <p className="text-[16px] text-center w-[379px] mb-6">
+          Your order has been successfully placed and is now being processed.
         </p>
         <Button
-          label={"Reorder"}
+          label={"Go to my account"}
           icon={
             <svg
               width="14"

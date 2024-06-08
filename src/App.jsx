@@ -1,16 +1,17 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import HomePage from "./pages/HomePage";
-import Product from "./pages/Product";
-import Cart from "./pages/Cart";
-import Checkout from "./pages/Checkout";
-import SuccessfulOrder from "./pages/SuccessfulOrder";
-import FailedOrder from "./pages/FailedOrder";
-import LoginPage from "./pages/LoginPage";
-import SignUp from "./pages/SignupPage";
-import ForgotPassword from "./pages/ForgotPassword";
-import ResetPassword from "./pages/ResetPassword";
-import Listing from "./pages/Listing";
+import HomePage from "./pages/Home/HomePage";
+import Product from "./pages/Product/Product";
+import Cart from "./pages/Cart/Cart";
+import Checkout from "./pages/Checkout Page/Checkout";
+import SuccessfulOrder from "./pages/After Payment/SuccessfulOrder";
+import FailedOrder from "./pages/After Payment/FailedOrder";
+import LoginPage from "./pages/User Authentication/LoginPage";
+import SignUp from "./pages/User Authentication/SignupPage";
+import ForgotPassword from "./pages/User Authentication/ForgotPassword";
+import ResetPassword from "./pages/User Authentication/ResetPassword";
+import Listing from "./pages/Listing/Listing";
+import Profile from "./pages/Profile/Profile";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="/listing" element={<Listing />} />
+          <Route path="/my-account" element={<Profile />} />
         </Routes>
       </BrowserRouter>
     </>

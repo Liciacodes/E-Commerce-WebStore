@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "../components/Header";
-import NavBar from "../components/NavBar";
-import HeaderWrapper from "../components/HeaderWrapper";
-import Footer from "../components/Footer";
+import Header from "../../components/Header";
+import NavBar from "../../components/NavBar";
+import HeaderWrapper from "../../components/HeaderWrapper";
+import Footer from "../../components/Footer";
 
 export default function ResetPassword() {
   return (

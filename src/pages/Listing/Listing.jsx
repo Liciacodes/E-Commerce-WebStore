@@ -1,17 +1,17 @@
 import React, { useState } from "react";
-import Header from "../components/Header";
-import NavBar from "../components/NavBar";
-import Close from "../assets/icons/X.png";
-import dropdown from "../assets/icons/DropdownIcon.png";
-import ProductCard from "../components/ProductCard";
-import frame1 from "../assets/frame1.png";
-import frame2 from "../assets/frame2.png";
-import frame3 from "../assets/frame3.png";
-import frame4 from "../assets/frame4.png";
+import Header from "../../components/Header";
+import NavBar from "../../components/NavBar";
+import Close from "../../assets/icons/X.png";
+import dropdown from "../../assets/icons/DropdownIcon.png";
+import ProductCard from "../../components/ProductCard";
+import frame1 from "../../assets/frame1.png";
+import frame2 from "../../assets/frame2.png";
+import frame3 from "../../assets/frame3.png";
+import frame4 from "../../assets/frame4.png";
 import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
-import Newsletter from "../components/Newsletter";
-import Footer from "../components/Footer";
+import Newsletter from "../../components/Newsletter";
+import Footer from "../../components/Footer";
 
 const categoryList = ["Trousers", " Shoes", "Handbags", " Hats", " Thermos"];
 

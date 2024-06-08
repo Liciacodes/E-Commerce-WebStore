@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import cart from "../assets/icons/cart.png";
 import user from "../assets/icons/user.png";
 import search from "../assets/icons/Search.png";
-// import chevronDown from "../assets/icons/";
 
 export default function NavBar() {
   return (
@@ -54,7 +53,7 @@ export default function NavBar() {
           <Link to="cart">
             <img src={cart} />
           </Link>
-          <Link>
+          <Link to={"/my-account"}>
             <img src={user} alt="" srcset="" />
           </Link>
         </div>

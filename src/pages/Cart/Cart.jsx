@@ -1,13 +1,13 @@
 import React from "react";
-import Header from "../components/Header";
-import NavBar from "../components/NavBar";
-import Button from "../components/Button";
+import Header from "../../components/Header";
+import NavBar from "../../components/NavBar";
+import Button from "../../components/Button";
 import { Link } from "react-router-dom";
-import Footer from "../components/Footer";
-import CartDetails from "../components/CartDetails";
-import featured1 from "../assets/feature1.png";
-import featured2 from "../assets/featured2.png";
-import HeaderWrapper from "../components/HeaderWrapper";
+import Footer from "../../components/Footer";
+import CartDetails from "../../components/CartDetails";
+import featured1 from "../../assets/feature1.png";
+import featured2 from "../../assets/featured2.png";
+import HeaderWrapper from "../../components/HeaderWrapper";
 
 export default function Cart() {
   return (

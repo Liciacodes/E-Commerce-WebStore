@@ -1,22 +1,16 @@
 import React from "react";
-import Header from "../components/Header";
-import NavBar from "../components/NavBar";
-import HeaderWrapper from "../components/HeaderWrapper";
-import Footer from "../components/Footer";
+import Header from "../../components/Header";
+import NavBar from "../../components/NavBar";
+import HeaderWrapper from "../../components/HeaderWrapper";
+import Footer from "../../components/Footer";
 
-export default function LoginPage() {
-  //   function onSignIn(googleUser) {
-  //     var profile = googleUser.getBasicProfile();
-  //     console.log("ID: " + profile.getId()); // Do not send to your backend! Use an ID token instead.
-  //     console.log("Name: " + profile.getName());
-  //     console.log("Image URL: " + profile.getImageUrl());
-  //     console.log("Email: " + profile.getEmail()); // This is null if the 'email' scope is not present.
-  //   }
+export default function SignUp() {
   return (
     <div>
       <Header />
       <NavBar />
-      <HeaderWrapper title={"Login"} color={"#F6F6F6"} />
+
+      <HeaderWrapper title={"Signup"} color={"#F6F6F6"} />
 
       <div className="flex justify-center mt-10 ">
         <div className="w-[350px]">
@@ -45,10 +39,22 @@ export default function LoginPage() {
                 htmlFor=""
                 class="block text-gray-700 text-sm font-bold mb-2"
               >
-                Email
+                Name
               </label>
               <input
                 type="email"
+                className="border shadow appearance-none  rounded w-full py-[10px] px-[15px]"
+              />
+            </div>
+            <div className="mb-4">
+              <label
+                htmlFor=""
+                class="block text-gray-700 text-sm font-bold mb-2"
+              >
+                Email
+              </label>
+              <input
+                type="password"
                 className="border shadow appearance-none  rounded w-full py-[10px] px-[15px]"
               />
             </div>
@@ -64,15 +70,16 @@ export default function LoginPage() {
                 className="border shadow appearance-none  rounded w-full py-[10px] px-[15px]"
               />
             </div>
-            <p className="mt-4 text-right mb-4 font-interFont font-normal text-[#474B57]">
-              Forgot Password?
+            <p className="mt-4  mb-4 font-interFont font-normal text-[#474B57]">
+              By creating an account you agree with our Terms of Service,
+              Privacy Policy,
             </p>
 
             <button className="bg-black mb-8 text-white w-full px-6 py-3 rounded">
-              Login
+              Create Account
             </button>
             <p className="text-center font-interFont font-normal text-[#5C5F6A]">
-              Don't have an account? Sign up
+              Already have an account? Log in
             </p>
           </form>
         </div>
