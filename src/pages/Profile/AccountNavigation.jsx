@@ -7,6 +7,9 @@ import { HiOutlineLogout } from "react-icons/hi";
 import { HiOutlineUser } from "react-icons/hi";
 import { RiKey2Line } from "react-icons/ri";
 import { GrDeliver } from "react-icons/gr";
+import Orders from "./Orders";
+import WishList from "./WishList";
+import ShippingAddress from "./ShippingAddress.jsx";
 // import {
 //   FaShoppingCart,
 //   FaHeart,
@@ -53,7 +56,7 @@ export default function AccountNavigation() {
   ];
   return (
     <div className="flex px-40 h-screen">
-      <div className="w-1/5 mt-8">
+      <div className="w-1/4 mt-8">
         <ul className="space-y-4">
           {sections.map((section) => (
             <li
@@ -79,11 +82,10 @@ export default function AccountNavigation() {
           ))}
         </ul>
       </div>
-      <div className="w-2/5 p-4 border-l  border-gray-300">
-        <h2 className="text-2xl font-bold mb-6">Orders</h2>
-        <div className="space-y-4">
-          {/* <div className="flex items-center justify-between p-4 border border-gray-300 rounded-lg"></div> */}
-        </div>
+      <div className="w-2/4 p-4 border-l  border-gray-300">
+        {/* <Orders /> */}
+        {/* <WishList /> */}
+        <ShippingAddress />
       </div>
     </div>
   );
