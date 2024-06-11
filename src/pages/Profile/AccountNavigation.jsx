@@ -10,6 +10,9 @@ import { GrDeliver } from "react-icons/gr";
 import Orders from "./Orders";
 import WishList from "./WishList";
 import ShippingAddress from "./ShippingAddress.jsx";
+import AccountDetails from "./AccountDetails.jsx";
+import ChangePassword from "./ChangePassword.jsx";
+import NoOrders from "./NoOrders.jsx";
 // import {
 //   FaShoppingCart,
 //   FaHeart,
@@ -85,7 +88,10 @@ export default function AccountNavigation() {
       <div className="w-2/4 p-4 border-l  border-gray-300">
         {/* <Orders /> */}
         {/* <WishList /> */}
-        <ShippingAddress />
+        {/* <ShippingAddress /> */}
+        {/* <AccountDetails /> */}
+        {/* <ChangePassword /> */}
+        <NoOrders />
       </div>
     </div>
   );
