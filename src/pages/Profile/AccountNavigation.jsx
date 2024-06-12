@@ -1,30 +1,38 @@
 import React, { useState } from "react";
 import { LuShoppingCart } from "react-icons/lu";
 import { FaRegHeart } from "react-icons/fa6";
-// import { CiDeliveryTruck } from "react-icons/ci";
-// import { GrLogout } from "react-icons/gr";
 import { HiOutlineLogout } from "react-icons/hi";
 import { HiOutlineUser } from "react-icons/hi";
 import { RiKey2Line } from "react-icons/ri";
 import { GrDeliver } from "react-icons/gr";
-import Orders from "./Orders";
-import WishList from "./WishList";
-import ShippingAddress from "./ShippingAddress.jsx";
-import AccountDetails from "./AccountDetails.jsx";
-import ChangePassword from "./ChangePassword.jsx";
 import NoOrders from "./NoOrders.jsx";
-// import {
-//   FaShoppingCart,
-//   FaHeart,
-//   FaMapMarkerAlt,
-//   FaKey,
-//   FaUser,
-//   FaSignOutAlt,
-// } from "react-icons/fa";
+import Orders from "./Orders.jsx";
+import WishList from "./WishList.jsx";
+import ShippingAddress from "./ShippingAddress.jsx";
+import ChangePassword from "./ChangePassword.jsx";
+import AccountDetails from "./AccountDetails.jsx";
 
 export default function AccountNavigation() {
   const [activeLink, setActiveLink] = useState("orders");
+  const renderContent = () => {
+    switch (activeLink) {
+      case "orders":
+        return <Orders />;
+      case "wishlist":
+        return <WishList />;
+      case "address":
+        return <ShippingAddress />;
+      case "password":
+        return <ChangePassword />;
+      case "accountDetail":
+        return <AccountDetails />;
+      case "logout":
+        return null;
 
+      default:
+        return null;
+    }
+  };
   const sections = [
     {
       key: "orders",
@@ -57,6 +65,7 @@ export default function AccountNavigation() {
       icon: <HiOutlineLogout className="text-gray-600" size={24} />,
     },
   ];
+
   return (
     <div className="flex px-40 h-screen">
       <div className="w-1/4 mt-8">
@@ -91,7 +100,8 @@ export default function AccountNavigation() {
         {/* <ShippingAddress /> */}
         {/* <AccountDetails /> */}
         {/* <ChangePassword /> */}
-        <NoOrders />
+        {/* <NoOrders /> */}
+        {renderContent()}
       </div>
     </div>
   );

@@ -13,7 +13,9 @@ export default function WishListItem({ image, title, date, price }) {
         <div>
           <p className="text-lg font-semibold">{title}</p>
           <p className="text-sm text-gray-600">Added on: {date}</p>
-          <p className="text-lg  text-black font-medium">Remove item</p>
+          <button className="text-lg  text-black font-medium">
+            Remove item
+          </button>
         </div>
       </div>
       <div className="flex items-center space-x-4">
