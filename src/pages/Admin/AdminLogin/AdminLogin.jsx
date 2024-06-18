@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/icons/AdminLogo.png";
+import logo from "../../../assets/icons/AdminLogo.png";
 
 export default function AdminLogin() {
   return (

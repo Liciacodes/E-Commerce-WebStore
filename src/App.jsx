@@ -12,7 +12,8 @@ import ForgotPassword from "./pages/User Authentication/ForgotPassword";
 import ResetPassword from "./pages/User Authentication/ResetPassword";
 import Listing from "./pages/Listing/Listing";
 import Profile from "./pages/Profile/Profile";
-import AdminLogin from "./pages/Admin/AdminLogin";
+import AdminLogin from "./pages/Admin/AdminLogin/AdminLogin";
+import AdminLayout from "./pages/Admin/Admin Dashboard/AdminLayout";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/listing" element={<Listing />} />
           <Route path="/my-account" element={<Profile />} />
           <Route path="/admin-login" element={<AdminLogin />} />
+          <Route path="/admin-dashboard" element={<AdminLayout />} />
         </Routes>
       </BrowserRouter>
     </>
