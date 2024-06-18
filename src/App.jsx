@@ -12,6 +12,7 @@ import ForgotPassword from "./pages/User Authentication/ForgotPassword";
 import ResetPassword from "./pages/User Authentication/ResetPassword";
 import Listing from "./pages/Listing/Listing";
 import Profile from "./pages/Profile/Profile";
+import AdminLogin from "./pages/Admin/AdminLogin";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="/listing" element={<Listing />} />
           <Route path="/my-account" element={<Profile />} />
+          <Route path="/admin-login" element={<AdminLogin />} />
         </Routes>
       </BrowserRouter>
     </>
