@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { MantineProvider } from "@mantine/core";
 import "./App.css";
 import HomePage from "./pages/Home/HomePage";
 import Product from "./pages/Product/Product";
@@ -14,10 +15,12 @@ import Listing from "./pages/Listing/Listing";
 import Profile from "./pages/Profile/Profile";
 import AdminLogin from "./pages/Admin/AdminLogin/AdminLogin";
 import AdminLayout from "./pages/Admin/Admin Dashboard/AdminLayout";
+import Dashboard from "./pages/Admin/Dashboard.jsx/Dashboard";
+import "@mantine/charts/styles.css";
 
 function App() {
   return (
-    <>
+    <MantineProvider>
       <BrowserRouter>
         <Routes>
           <Route path="/" index element={<HomePage />} />
@@ -33,10 +36,11 @@ function App() {
           <Route path="/listing" element={<Listing />} />
           <Route path="/my-account" element={<Profile />} />
           <Route path="/admin-login" element={<AdminLogin />} />
-          <Route path="/admin-dashboard" element={<AdminLayout />} />
+          <Route path="/admin-dashboard" element={<AdminLayout />}></Route>
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </BrowserRouter>
-    </>
+    </MantineProvider>
   );
 }
 
