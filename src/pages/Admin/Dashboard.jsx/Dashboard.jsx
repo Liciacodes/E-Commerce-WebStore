@@ -1,28 +1,20 @@
 import React from "react";
-// import { LineChart } from "@mui/x-charts/LineChart";
-// import { data } from "../../../data";
 import { GoChevronRight } from "react-icons/go";
+import Stack from "@mui/material/Stack";
+import Box from "@mui/material/Box";
 import logout from "../../../assets/icons/logout.png";
 import TopCardWrappers from "../../../components/AdminDashboardCharts/TopCardWrapper";
-// import AdminLayout from "../Admin Dashboard/AdminLayout";
-// import "@mantine/charts/styles.css";
+import { SparkLineChart } from "@mui/x-charts/SparkLineChart";
 import { BarChart } from "@mui/x-charts/BarChart";
 import BestSelling from "../../../components/AdminDashboardCharts/BestSelling";
 import RecentOrders from "../../../components/AdminDashboardCharts/RecentOrders";
 
-export const data = [
-  { month: "January", Smartphones: 1200, Laptops: 900, Tablets: 200 },
-  { month: "February", Smartphones: 1900, Laptops: 1200, Tablets: 400 },
-  { month: "March", Smartphones: 400, Laptops: 1000, Tablets: 200 },
-  { month: "April", Smartphones: 1000, Laptops: 200, Tablets: 800 },
-  { month: "May", Smartphones: 800, Laptops: 1400, Tablets: 1200 },
-  { month: "June", Smartphones: 750, Laptops: 600, Tablets: 1000 },
-];
+import ProgressBar from "../../../components/AdminDashboardCharts/ProgressBar";
 
 export default function Dashboard() {
   return (
     <div className="flex flex-col lg:w-full lg:ml-72 mt-4 mb-2 ">
-      <div className="flex justify-between mb-16 mt-20 lg:mt-0">
+      <div className="flex justify-between mb-14 mt-20 lg:mt-0">
         <div className="flex items-center">
           <p className="font-interFont font-medium text-[14px] text-black mr-1">
             Admin
@@ -37,50 +29,53 @@ export default function Dashboard() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 grid-rows-1 md:grid-cols-2 md:grid-rows-1 lg:grid-cols-3 lg:grid-rows-2 lg:w-full overflow-hidden ">
+      <div className="grid grid-cols-1 grid-rows-1 md:grid-cols-2  md:grid-rows-1 lg:grid-cols-3 lg:grid-rows-2 lg:w-full overflow-hidden gap-4  ">
         <TopCardWrappers
           title={"Total Sales"}
           description={"This Month"}
           price={"$4,235"}
           chart={
-            <BarChart
-              // xAxis={[
-              //   {
-              //     id: "barCategories",
-              //     data: ["bar A", "bar B", "bar C"],
-              //     scaleType: "band",
-              //   },
-              // ]}
-              series={[
-                {
-                  data: [2, 5, 3],
-                },
-              ]}
-              width={300}
-              height={150}
-            />
+            <Stack direction="row" sx={{ width: "100%" }}>
+              <Box sx={{ flexGrow: 1 }}>
+                <BarChart
+                  leftAxis={null}
+                  bottomAxis={null}
+                  series={[
+                    {
+                      data: [
+                        5, 5, 4, 4, 3, 3, 2, 2, 1, 1, 1, 1, 5, 5, 4, 4, 3, 3, 4,
+                        9, 8, 7, 5, 5, 8, 8, 4, 4, 3, 2, 1, 5, 5, 5, 4, 5, 5, 5,
+                        4, 4, 3, 8, 7, 6, 9, 8, 9, 9, 9, 9,
+                      ],
+                    },
+                    ,
+                  ]}
+                  height={150}
+                />
+              </Box>
+            </Stack>
           }
         />
         <TopCardWrappers
           title={"Customers"}
           description={"This Month"}
           price={"2571"}
-          // chart={
-          //   <LineChart
-          //     width={300}
-          //     height={150}
-          //     data={data}
-          //     dataKey="month"
-          //     series={[{ name: "Apples", color: "indigo.6" }]}
-          //     curveType="linear"
-          //     connectNulls
-          //   />
-          // }
+          chart={
+            <Stack direction="row" sx={{ width: "100%" }}>
+              <Box sx={{ flexGrow: 1 }}>
+                <SparkLineChart
+                  data={[1, 4, 5, 6, 7, 2, 3, 3, 2, 4, 6, 8, 2, 6, 9, 4, 6]}
+                  height={100}
+                />
+              </Box>
+            </Stack>
+          }
         />
         <TopCardWrappers
           title={"Orders"}
           description={"Month Goals: 1,000"}
           price={"734"}
+          chart={<ProgressBar />}
         />
         <BestSelling />
         <RecentOrders />

@@ -2,8 +2,10 @@ import React from "react";
 
 export default function RecentOrders() {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md col-span-2 lg:h-[475px]">
-      <h3 className="text-gray-600 mb-3">Recent Orders</h3>
+    <div className="bg-white p-6 rounded-lg shadow-md col-span-2 h-auto ">
+      <h3 className="text-[16px] text-[rgb(28,29,34)] font-interFont font-semibold">
+        Recent Orders
+      </h3>
       <table className="w-full text-left">
         <thead className="border-t border-b border-[#E9E9EB] ">
           <tr className="mb-4 py-4 ">
