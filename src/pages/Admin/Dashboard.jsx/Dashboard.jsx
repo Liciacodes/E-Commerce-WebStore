@@ -29,7 +29,7 @@ export default function Dashboard() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 grid-rows-1 md:grid-cols-2  md:grid-rows-1 lg:grid-cols-3 lg:grid-rows-2 lg:w-full overflow-hidden gap-4  ">
+      <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:w-full overflow-hidden gap-x-8 gap-y-12 ">
         <TopCardWrappers
           title={"Total Sales"}
           description={"This Month"}
@@ -37,20 +37,14 @@ export default function Dashboard() {
           chart={
             <Stack direction="row" sx={{ width: "100%" }}>
               <Box sx={{ flexGrow: 1 }}>
-                <BarChart
-                  leftAxis={null}
-                  bottomAxis={null}
-                  series={[
-                    {
-                      data: [
-                        5, 5, 4, 4, 3, 3, 2, 2, 1, 1, 1, 1, 5, 5, 4, 4, 3, 3, 4,
-                        9, 8, 7, 5, 5, 8, 8, 4, 4, 3, 2, 1, 5, 5, 5, 4, 5, 5, 5,
-                        4, 4, 3, 8, 7, 6, 9, 8, 9, 9, 9, 9,
-                      ],
-                    },
-                    ,
+                <SparkLineChart
+                  plotType="bar"
+                  data={[
+                    1, 4, 2, 5, 7, 2, 4, 6, 5, 5, 4, 4, 3, 3, 2, 2, 1, 1, 1, 1,
+                    5, 5, 4, 4, 3, 3, 4, 9, 8, 7, 5, 5, 8, 8, 4, 4, 3, 2, 1, 5,
+                    5, 5, 4, 5, 5, 5, 4, 4, 3, 8, 7, 6, 9, 8, 9, 9, 9, 9,
                   ]}
-                  height={150}
+                  height={100}
                 />
               </Box>
             </Stack>
