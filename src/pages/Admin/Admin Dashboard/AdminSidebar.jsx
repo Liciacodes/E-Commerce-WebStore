@@ -10,6 +10,7 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { CiShop } from "react-icons/ci";
 import { FiPlus } from "react-icons/fi";
 import { FiMenu } from "react-icons/fi"; // Import menu icon for toggle button
+import Dashboard from "../Dashboard.jsx/Dashboard";
 
 export default function AdminSidebar({ children }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -46,7 +47,7 @@ export default function AdminSidebar({ children }) {
 
           <nav className="flex flex-col mt-4 mb-8">
             <SideBarNavLinks
-              to="/admin-dashboard"
+              to="/dashboard"
               icon={<MdOutlineDashboard size={24} />}
               text="Dashboard"
             />
@@ -94,7 +95,10 @@ export default function AdminSidebar({ children }) {
           onClick={toggleSidebar}
         ></div>
       )}
-      <div className="sm:w-[82%] w-full">{children}</div>
+      <div className="sm:w-[82%] w-full">
+        {children}
+        <Dashboard />
+      </div>
     </div>
   );
 }

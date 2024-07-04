@@ -14,21 +14,6 @@ import ProgressBar from "../../../components/AdminDashboardCharts/ProgressBar";
 export default function Dashboard() {
   return (
     <div className="flex flex-col lg:w-full lg:ml-72 mt-4 mb-2 ">
-      <div className="flex justify-between mb-14 mt-20 lg:mt-0">
-        <div className="flex items-center">
-          <p className="font-interFont font-medium text-[14px] text-black mr-1">
-            Admin
-          </p>
-          <span>
-            <GoChevronRight className="ml-2" />
-          </span>
-          <span className="text-black font-medium ml-2">Dashboard</span>
-        </div>
-        <div>
-          <img src={logout} alt="logout" />
-        </div>
-      </div>
-
       <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:w-full overflow-hidden gap-x-8 gap-y-12 ">
         <TopCardWrappers
           title={"Total Sales"}
