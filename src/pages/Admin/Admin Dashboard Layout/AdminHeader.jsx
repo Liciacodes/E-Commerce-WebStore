@@ -1,10 +1,10 @@
 import React from "react";
 import { GoChevronRight } from "react-icons/go";
-import logout from "../../assets/icons/logout.png";
+import logout from "../../../assets/icons/logout.png";
 
 export default function AdminHeader() {
   return (
-    <div className="flex justify-between mb-14 mt-20 lg:mt-0">
+    <header className=" py-4 px-6  items-center flex justify-between  lg:mt-0 w-full">
       <div className="flex items-center">
         <p className="font-interFont font-medium text-[14px] text-black mr-1">
           Admin
@@ -17,6 +17,6 @@ export default function AdminHeader() {
       <div>
         <img src={logout} alt="logout" />
       </div>
-    </div>
+    </header>
   );
 }

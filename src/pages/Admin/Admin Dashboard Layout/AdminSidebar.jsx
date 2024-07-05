@@ -10,9 +10,9 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { CiShop } from "react-icons/ci";
 import { FiPlus } from "react-icons/fi";
 import { FiMenu } from "react-icons/fi"; // Import menu icon for toggle button
-import Dashboard from "../Dashboard.jsx/Dashboard";
+import Dashboard from "../AdminPages/Dashboard";
 
-export default function AdminSidebar({ children }) {
+export default function AdminSidebar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
@@ -31,7 +31,7 @@ export default function AdminSidebar({ children }) {
 
       {/* Sidebar */}
       <div
-        className={`fixed flex flex-col bg-white h-screen w-64 transition-transform duration-300 ${
+        className={`fixed lg:static flex flex-col bg-white h-screen w-64 transition-transform duration-300 ${
           isSidebarOpen
             ? "transform translate-x-0"
             : "transform -translate-x-full"
@@ -95,10 +95,6 @@ export default function AdminSidebar({ children }) {
           onClick={toggleSidebar}
         ></div>
       )}
-      <div className="sm:w-[82%] w-full">
-        {children}
-        <Dashboard />
-      </div>
     </div>
   );
 }

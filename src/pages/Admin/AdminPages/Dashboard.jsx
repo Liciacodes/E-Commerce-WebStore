@@ -5,7 +5,6 @@ import Box from "@mui/material/Box";
 import logout from "../../../assets/icons/logout.png";
 import TopCardWrappers from "../../../components/AdminDashboardCharts/TopCardWrapper";
 import { SparkLineChart } from "@mui/x-charts/SparkLineChart";
-import { BarChart } from "@mui/x-charts/BarChart";
 import BestSelling from "../../../components/AdminDashboardCharts/BestSelling";
 import RecentOrders from "../../../components/AdminDashboardCharts/RecentOrders";
 
@@ -13,8 +12,8 @@ import ProgressBar from "../../../components/AdminDashboardCharts/ProgressBar";
 
 export default function Dashboard() {
   return (
-    <div className="flex flex-col lg:w-full lg:ml-72 mt-4 mb-2 ">
-      <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:w-full overflow-hidden gap-x-8 gap-y-12 ">
+    <div className="flex flex-col lg:w-full ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:w-full overflow-hidden gap-x-8 gap-y-12 ">
         <TopCardWrappers
           title={"Total Sales"}
           description={"This Month"}

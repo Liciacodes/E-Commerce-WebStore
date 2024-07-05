@@ -6,7 +6,7 @@ export default function Input({ placeholder, ...props }) {
       type="text"
       placeholder={placeholder}
       {...props}
-      className="h-[50px] px-[20px] py-[10px] border bg-white pl-10"
+      className="h-[50px] px-[20px] py-[10px] border bg-white pl-10 rounded-md"
     />
   );
 }

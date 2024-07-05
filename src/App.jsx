@@ -14,9 +14,14 @@ import ResetPassword from "./pages/User Authentication/ResetPassword";
 import Listing from "./pages/Listing/Listing";
 import Profile from "./pages/Profile/Profile";
 import AdminLogin from "./pages/Admin/AdminLogin/AdminLogin";
-import AdminLayout from "./pages/Admin/Admin Dashboard/AdminLayout";
-import Dashboard from "./pages/Admin/Dashboard.jsx/Dashboard";
+import AdminLayout from "./pages/Admin/Admin Dashboard Layout/AdminLayout";
+import Dashboard from "./pages/Admin/AdminPages/Dashboard";
 import "@mantine/charts/styles.css";
+import Products from "./pages/Admin/AdminPages/Products";
+import Orders from "./pages/Admin/AdminPages/Orders";
+import Customers from "./pages/Admin/AdminPages/Customers";
+import Review from "./pages/Admin/AdminPages/Reviews";
+import Settings from "./pages/Admin/AdminPages/Settings";
 
 function App() {
   return (
@@ -36,8 +41,14 @@ function App() {
           <Route path="/listing" element={<Listing />} />
           <Route path="/my-account" element={<Profile />} />
           <Route path="/admin-login" element={<AdminLogin />} />
-          <Route path="/admin-dashboard" element={<AdminLayout />}></Route>
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/" element={<AdminLayout />}>
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/orders" element={<Orders />} />
+            <Route path="/customers" element={<Customers />} />
+            <Route path="/reviews" element={<Review />} />
+            <Route path="/settings" element={<Settings />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </MantineProvider>
