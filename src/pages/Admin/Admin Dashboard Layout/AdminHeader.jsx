@@ -4,7 +4,7 @@ import logout from "../../../assets/icons/logout.png";
 
 export default function AdminHeader() {
   return (
-    <header className=" py-4 px-6  items-center flex justify-between  lg:mt-0 w-full">
+    <header className="py-2 px-6  items-center flex justify-between w-full">
       <div className="flex items-center">
         <p className="font-interFont font-medium text-[14px] text-black mr-1">
           Admin

@@ -22,6 +22,7 @@ import Orders from "./pages/Admin/AdminPages/Orders";
 import Customers from "./pages/Admin/AdminPages/Customers";
 import Review from "./pages/Admin/AdminPages/Reviews";
 import Settings from "./pages/Admin/AdminPages/Settings";
+import AddProducts from "./pages/Admin/AdminPages/AddProducts";
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
           <Route path="/" element={<AdminLayout />}>
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/products" element={<Products />} />
+            <Route path="/add-products" element={<AddProducts />} />
             <Route path="/orders" element={<Orders />} />
             <Route path="/customers" element={<Customers />} />
             <Route path="/reviews" element={<Review />} />
