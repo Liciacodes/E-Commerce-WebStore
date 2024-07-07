@@ -101,8 +101,8 @@ function Products() {
           </div>
         </div>
       </header>
-      <div className="overflow-x-auto mt-6">
-        <table className="w-full min-w-[1000px] text-left mt-6 overflow-x-auto h-[calc(100vh-230px)]">
+      <div className="overflow-x-auto mt-6 h-[calc(100vh-200px)]">
+        <table className="w-full min-w-[1000px] text-left mt-6">
           <thead className="border-t border-b border-[#E9E9EB] text-[#5C5F6A]">
             <tr className="text-[#5C5F6A]">
               <th className="p-4">
