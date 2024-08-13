@@ -4,9 +4,9 @@ import categoryImage from "../assets/Category Image.png";
 
 export default function Browse() {
   return (
-    <section className="flex items-center justify-between px-40  bg-gradient-to-r from-[#F6F6F6] to-blue-[#FFFFFF00]  h-[310px]">
+    <section className="flex items-center justify-between px-4 md:px-20 lg:px-40 bg-gradient-to-r from-[#F6F6F6] to-blue-[#FFFFFF00] h-[310px]">
       <div>
-        <h1 className="font-interFont font-semibold text-[32px] mb-4">
+        <h1 className="font-interFont font-semibold text-[24px] md:text-[32px] mb-4">
           Browse Our Fashion Paradise!
         </h1>
         <p className="font-interFont font-normal text-[14px] mb-10">
@@ -40,7 +40,7 @@ export default function Browse() {
         />
       </div>
       <div className=" ">
-        <img src={categoryImage} alt="category-image" />
+        <img src={categoryImage} alt="category-image" className="" />
       </div>
     </section>
   );

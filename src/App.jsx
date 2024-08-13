@@ -1,3 +1,4 @@
+import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { MantineProvider } from "@mantine/core";
 import "./App.css";
@@ -42,14 +43,14 @@ function App() {
           <Route path="/listing" element={<Listing />} />
           <Route path="/my-account" element={<Profile />} />
           <Route path="/admin-login" element={<AdminLogin />} />
-          <Route path="/" element={<AdminLayout />}>
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="/add-products" element={<AddProducts />} />
-            <Route path="/orders" element={<Orders />} />
-            <Route path="/customers" element={<Customers />} />
-            <Route path="/reviews" element={<Review />} />
-            <Route path="/settings" element={<Settings />} />
+          <Route path="/admin" element={<AdminLayout />}>
+            <Route path="dashboard" element={<Dashboard />} />
+            <Route path="products" element={<Products />} />
+            <Route path="add-products" element={<AddProducts />} />
+            <Route path="orders" element={<Orders />} />
+            <Route path="customers" element={<Customers />} />
+            <Route path="reviews" element={<Review />} />
+            <Route path="settings" element={<Settings />} />
           </Route>
         </Routes>
       </BrowserRouter>

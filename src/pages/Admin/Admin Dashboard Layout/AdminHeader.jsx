@@ -4,9 +4,9 @@ import logout from "../../../assets/icons/logout.png";
 
 export default function AdminHeader() {
   return (
-    <header className="py-2 px-6  items-center flex justify-between w-full">
+    <header className="py-2 px-6  items-center flex justify-between w-full mb-14 mt-10">
       <div className="flex items-center">
-        <p className="font-interFont font-medium text-[14px] text-black mr-1">
+        <p className="font-interFont font-medium text-[16px] text-[#5C5F6A] mr-1">
           Admin
         </p>
         <span>

@@ -54,6 +54,14 @@ export default function Review() {
       reviews: "arlene.mccoy@gmail.com",
     },
   ];
+
+  function getInitials(name) {
+    const nameParts = name.split(" ");
+    const firstInitial = nameParts[0].charAt(0);
+    const lastInitial =
+      nameParts.length > 1 ? nameParts[nameParts.length - 1].charAt(0) : "";
+    return firstInitial + lastInitial;
+  }
   return (
     <div className="bg-white h-full rounded-lg shadow-md p-6">
       <header className="flex items-center justify-between gap-1">
@@ -91,8 +99,8 @@ export default function Review() {
                 className="border-b hover:bg-gray-50 transition duration-300 ease-in-out"
               >
                 <td className="">
-                  <div className="flex justify-center items-center w-12 h-12 rounded gap-2">
-                    <p className="bg-[#F6F6F6] text-[#4078FF] p-2">AH</p>
+                  <div className="bg-[#F6F6F6] text-[#4078FF] flex justify-center items-center w-12 h-12 rounded gap-2 m-1">
+                    {getInitials(review.name)}
                   </div>
                 </td>
                 <td className=" font-semibold">{review.name}</td>

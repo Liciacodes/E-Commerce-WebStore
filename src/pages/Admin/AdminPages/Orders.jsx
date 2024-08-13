@@ -69,6 +69,13 @@ function Orders() {
       date: "20 Dec, 2022",
       image: picture8,
     },
+    {
+      order: "MOCKUP Black",
+      total: "$30.00",
+      status: "In Stock",
+      date: "20 Dec, 2022",
+      image: picture8,
+    },
   ];
   return (
     <div className="bg-white h-full rounded-lg shadow-md p-6">

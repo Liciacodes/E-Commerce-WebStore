@@ -79,6 +79,22 @@ function Products() {
       categories: "T-shirt",
       image: picture8,
     },
+    {
+      name: "MOCKUP Black",
+      sku: "47514502",
+      price: "$30.00",
+      stock: "In Stock",
+      categories: "T-shirt",
+      image: picture8,
+    },
+    {
+      name: "MOCKUP Black",
+      sku: "47514502",
+      price: "$30.00",
+      stock: "In Stock",
+      categories: "T-shirt",
+      image: picture8,
+    },
   ];
   return (
     <div className="bg-white h-full rounded-lg shadow-md p-6">
@@ -87,7 +103,7 @@ function Products() {
           Products
         </h1>
         <div className="flex items-center gap-x-5">
-          <Link to={"/add-products"}>
+          <Link to={"admin/add-products"}>
             <Button label={"Add Products"} />
           </Link>
 

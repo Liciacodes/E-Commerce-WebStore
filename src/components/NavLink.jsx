@@ -7,7 +7,7 @@ export default function NavLink({ to, label, hasDropdown, ...props }) {
       <li
         to={to}
         {...props}
-        className="px-4 py-2 text-[#5C5F6A] hover:text-gray-900 flex items-center text-[14px] cursor-pointer"
+        className="px-4 py-2 text-[#5C5F6A] hover:text-gray-900 flex items-center text-[14px] font-medium cursor-pointer"
       >
         {label}
         {hasDropdown && <img src={chevronDown} className="w-5 h-5 ml-1 mt-1" />}

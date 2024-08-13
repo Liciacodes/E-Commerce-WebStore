@@ -3,15 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontSize: {
-      "3xl": [
-        "1.5rem",
-        {
-          lineHeight: "38.73px",
-          letterSpacing: "-3.5%",
-          fontWeight: "600",
-          fontSize: "32px",
-        },
-      ],
+      sm: "0.875rem",
+      base: "1rem",
+      lg: "1.125rem",
+      xl: "1.25rem",
     },
     extend: {
       fontFamily: {

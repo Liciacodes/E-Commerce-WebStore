@@ -9,7 +9,7 @@ import frame4 from "../assets/frame4.png";
 export default function Features() {
   return (
     <div className="bg-white pb-20">
-      <div className="flex justify-between items-center gap-x-40  px-40">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-x-0 md:gap-x-40 sm:px-10  md:px-[162px] px-3">
         <FeatureItem
           icon={
             <svg
@@ -89,35 +89,43 @@ export default function Features() {
           <h3 className="text-[#878A92] font-medium font-interFont text-[12px]">
             SHOP NOW
           </h3>
-          <h1 className="mt-4 font-interFont font-bold text-2xl text-[#0E1422] mb-20">
+          <h1 className="mt-2 font-interFont font-bold text-[24px] text-[#0E1422] mb-20">
             Best Selling
           </h1>
 
-          <div className="px-40 flex justify-between ">
-            <ProductCard
-              image={frame1}
-              title={"Classic Monochrome Tees"}
-              stockLabel={"IN STOCK"}
-              price={"$27.00"}
-            />
-            <ProductCard
-              image={frame2}
-              title={"Monochromatic Wardrobe"}
-              stockLabel={"IN STOCK"}
-              price={"$35.00"}
-            />
-            <ProductCard
-              image={frame3}
-              title={"Essential Neutrals"}
-              stockLabel={"IN STOCK"}
-              price={"$22.00"}
-            />
-            <ProductCard
-              image={frame4}
-              title={"UTRAANET Black"}
-              stockLabel={"IN STOCK"}
-              price={"$43.00"}
-            />
+          <div className="flex flex-wrap justify-between gap-y-6 md:px-[162px] px-10">
+            <div className="w-full sm:w-1/2 md:w-1/4 px-2">
+              <ProductCard
+                image={frame1}
+                title={"Classic Monochrome Tees"}
+                stockLabel={"IN STOCK"}
+                price={"$27.00"}
+              />
+            </div>
+            <div className="w-full sm:w-1/2 md:w-1/4 px-2">
+              <ProductCard
+                image={frame2}
+                title={"Monochromatic Wardrobe"}
+                stockLabel={"IN STOCK"}
+                price={"$35.00"}
+              />
+            </div>
+            <div className="w-full sm:w-1/2 md:w-1/4 px-2">
+              <ProductCard
+                image={frame3}
+                title={"Essential Neutrals"}
+                stockLabel={"IN STOCK"}
+                price={"$22.00"}
+              />
+            </div>
+            <div className="w-full sm:w-1/2 md:w-1/4 px-2">
+              <ProductCard
+                image={frame4}
+                title={"UTRAANET Black"}
+                stockLabel={"IN STOCK"}
+                price={"$43.00"}
+              />
+            </div>
           </div>
         </div>
       </div>

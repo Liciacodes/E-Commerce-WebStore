@@ -4,7 +4,7 @@ import dash from "../../assets/icons/dash.png";
 
 export default function BestSelling() {
   return (
-    <div className="bg-white rounded-lg shadow-sm border-2 lg:h-auto h-full col-span-1">
+    <div className="bg-white rounded-lg shadow-sm border-2 lg:h-[475px] h-full col-span-1">
       <div className="p-4">
         <h3 className="text-[16px] text-[rgb(28,29,34)] font-interFont font-semibold  ">
           Best Selling
